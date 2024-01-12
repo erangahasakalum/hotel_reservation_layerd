@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addcustomer" prefHeight="510.0" prefWidth="732.0" styleClass="gradiant-card" stylesheets="@../styleSheet/gredient%20colours.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel_management.controller.AddRoomsFormController">
+   <children>
+      <Pane layoutX="28.0" layoutY="28.0" prefHeight="454.0" prefWidth="674.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: white;">
+         <children>
+            <TextField fx:id="txtRoomNumber" layoutX="27.0" layoutY="117.0" onAction="#txtRoomNumberOnAction" prefHeight="31.0" prefWidth="206.0" />
+            <Label layoutX="28.0" layoutY="88.0" prefHeight="31.0" prefWidth="195.0" text="Room number">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="261.0" prefHeight="31.0" prefWidth="195.0" text="Room price">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="262.0" layoutY="153.0" prefHeight="31.0" prefWidth="195.0" text="Bed count">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRoomPrice" layoutX="253.0" layoutY="288.0" onAction="#roomPriceOnAction" prefHeight="31.0" prefWidth="206.0" />
+            <Label layoutX="265.0" layoutY="89.0" prefHeight="31.0" prefWidth="195.0" text="Room category">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="createBtn" layoutX="557.0" layoutY="397.0" onAction="#createOnAction" prefHeight="31.0" prefWidth="74.0" styleClass="button-create" stylesheets="@../styleSheet/txt.css" text="Create" />
+            <JFXButton fx:id="cancelBtn" layoutX="445.0" layoutY="397.0" onAction="#cancelBtnOnAction" prefHeight="31.0" prefWidth="74.0" styleClass="button-cancel" stylesheets="@../styleSheet/txt.css" text="Cancel" />
+            <Separator layoutX="2.0" layoutY="368.0" prefHeight="10.0" prefWidth="671.0" />
+            <Label layoutX="26.0" layoutY="11.0" prefHeight="38.0" prefWidth="322.0" stylesheets="@../styleSheet/settings.css" text="Add Rooms">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="38.0" prefHeight="31.0" prefWidth="329.0" style="-fx-text-fill: linear-gradient(to right, #b8b9b9, #656c69);" styleClass="label-hint" stylesheets="@../styleSheet/label.css" text="Add new rooms to the system">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Separator layoutX="1.0" layoutY="67.0" prefHeight="10.0" prefWidth="671.0" />
+            <JFXComboBox fx:id="roomCategoryComboBox" layoutX="259.0" layoutY="117.0" onAction="#txtRoomCategoryOnAction" prefHeight="31.0" prefWidth="206.0" />
+            <Label layoutX="517.0" layoutY="87.0" prefHeight="31.0" prefWidth="120.0" text="Rooms facilities">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="clickWifi" layoutX="499.0" layoutY="139.0" onAction="#wifyOnAction" prefHeight="31.0" prefWidth="161.0" text="Wifi" />
+            <JFXCheckBox fx:id="clickTv" layoutX="499.0" layoutY="173.0" onAction="#tvOnAction" prefHeight="31.0" prefWidth="161.0" text="Tv" />
+            <JFXCheckBox fx:id="clickPool" layoutX="499.0" layoutY="207.0" onAction="#poolOnAction" prefHeight="31.0" prefWidth="161.0" text="Swimming pool" />
+            <JFXCheckBox fx:id="clickAc" layoutX="499.0" layoutY="240.0" onAction="#acOnAction" prefHeight="31.0" prefWidth="161.0" text="Ac" />
+            <JFXCheckBox fx:id="clickSmoking" layoutX="499.0" layoutY="273.0" onAction="#smokingOnAction" prefHeight="31.0" prefWidth="161.0" text="Non smoking " />
+            <JFXCheckBox fx:id="clickHotWater" layoutX="499.0" layoutY="306.0" onAction="#hotwaterOnAction" prefHeight="31.0" prefWidth="161.0" text="Hot water" />
+            <Separator layoutX="476.0" layoutY="72.0" orientation="VERTICAL" prefHeight="280.0" prefWidth="4.0" />
+            <Label layoutX="28.0" layoutY="155.0" prefHeight="31.0" prefWidth="195.0" text="Num of guest">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNumOfCustomer" layoutX="27.0" layoutY="192.0" onAction="#numOfGuestOnAction" prefHeight="31.0" prefWidth="206.0" />
+            <TextField fx:id="txtBedCount" layoutX="252.0" layoutY="192.0" onAction="#bedCountOnAction" prefHeight="31.0" prefWidth="206.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

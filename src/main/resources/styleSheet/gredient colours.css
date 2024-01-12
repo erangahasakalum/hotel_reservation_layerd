@@ -1,0 +1,3 @@
+.gradiant-card {
+    -fx-background-color: linear-gradient(to right, #0061ff, #60efff);
+}

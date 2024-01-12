@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="612.0" prefWidth="1142.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel_management.controller.SettingFormController">
+   <children>
+      <Label layoutX="28.0" layoutY="20.0" prefHeight="34.0" prefWidth="329.0" stylesheets="@../styleSheet/label.css" text="Settings">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="42.0" prefHeight="31.0" prefWidth="329.0" styleClass="label-hint" stylesheets="@../styleSheet/label.css" text="Can manage everythin about setting">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="97.0" prefHeight="34.0" prefWidth="146.0" stylesheets="@../styleSheet/label.css" text="Sekku Villa">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="161.0" prefHeight="31.0" prefWidth="43.0" styleClass="label-hint" stylesheets="@../styleSheet/label.css" text="Admin">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="130.0" prefHeight="31.0" prefWidth="126.0" text="K.E.H SILVA">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="865.0" layoutY="27.0" prefHeight="31.0" prefWidth="246.0" text="sekkuvilla@gmail.com">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="865.0" layoutY="58.0" prefHeight="31.0" prefWidth="246.0" text="0766553787">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="207.0" prefHeight="34.0" prefWidth="219.0" stylesheets="@../styleSheet/label.css" text="Change Username">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="835.5" layoutX="229.0" layoutY="223.0" startX="127.0" />
+      <Line endX="899.6666259765625" layoutX="163.0" layoutY="360.0" startX="-100.0" />
+      <Line endX="-764.1666870117188" endY="-51.5" layoutX="828.0" layoutY="275.0" startX="-764.1666870117188" startY="84.0" />
+      <Line endX="-765.0" endY="-54.66667175292969" layoutX="1829.0" layoutY="277.0" startX="-765.0" startY="82.66665649414062" />
+      <Line endX="-703.0" endY="-58.0" layoutX="839.0" layoutY="281.0" startX="-774.6666870117188" startY="-58.0" />
+      <Label layoutX="144.0" layoutY="376.0" prefHeight="34.0" prefWidth="214.0" stylesheets="@../styleSheet/label.css" text="Change Password">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="821.5" endY="-1.166656494140625" layoutX="243.0" layoutY="393.0" startX="98.33334350585938" />
+      <Line endX="899.6666259765625" layoutX="163.0" layoutY="530.0" startX="-100.0" />
+      <Line endX="-764.1666870117188" endY="-51.5" layoutX="828.0" layoutY="445.0" startX="-764.1666870117188" startY="84.0" />
+      <Line endX="-765.0" endY="-54.66667175292969" layoutX="1829.0" layoutY="447.0" startX="-765.0" startY="82.66665649414062" />
+      <Line endX="-703.0" endY="-58.0" layoutX="839.0" layoutY="451.0" startX="-774.6666870117188" startY="-58.0" />
+      <Label layoutX="95.0" layoutY="253.0" prefHeight="31.0" prefWidth="184.0" text="Current  UserName">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="815.0" layoutY="418.0" prefHeight="31.0" prefWidth="161.0" text="Confirm Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="418.0" prefHeight="31.0" prefWidth="133.0" text="New Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="809.0" layoutY="253.0" prefHeight="31.0" prefWidth="164.0" text="Confirm UserName">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="254.0" prefHeight="31.0" prefWidth="177.0" text="New UserName">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="417.0" prefHeight="31.0" prefWidth="153.0" text="Current Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" layoutX="94.0" layoutY="284.0" prefHeight="33.0" prefWidth="231.0" promptText="Enter Your Current UserName" />
+      <TextField fx:id="txtConfirmUsername" layoutX="807.0" layoutY="284.0" onAction="#confirmUsernameOnAction" prefHeight="33.0" prefWidth="231.0" promptText="Confrim Your UserName" />
+      <TextField fx:id="txtNewUsername" layoutX="443.0" layoutY="284.0" onAction="#verifyUsernameOnAction" prefHeight="33.0" prefWidth="231.0" promptText="Enter New UserName" />
+      <TextField fx:id="txtNewPassword" layoutX="439.0" layoutY="449.0" onAction="#verifyPasswordOnActon" prefHeight="33.0" prefWidth="231.0" promptText="Enter New Password" />
+      <TextField fx:id="txtConfirmPassword" layoutX="814.0" layoutY="449.0" onAction="#confirmPasswordOnAction" prefHeight="33.0" prefWidth="231.0" promptText="Confirm Password">
+         <styleClass>
+            <String fx:value="box" />
+            <String fx:value="text-center" />
+            <String fx:value="input-container" />
+            <String fx:value="btn" />
+         </styleClass></TextField>
+      <TextField fx:id="txtPassword" layoutX="91.0" layoutY="449.0" prefHeight="33.0" prefWidth="231.0" promptText="Enter Your Current Password" />
+      <JFXButton layoutX="946.0" layoutY="325.0" onAction="#btnUserNameChange" prefHeight="25.0" prefWidth="115.0" stylesheets="@../styleSheet/txt.css" text="Change" />
+      <JFXButton layoutX="946.0" layoutY="494.0" onAction="#btnChangePasswordOnAction" prefHeight="25.0" prefWidth="115.0" stylesheets="@../styleSheet/txt.css" text="Change" />
+   </children>
+</AnchorPane>

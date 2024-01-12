@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="612.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel_management.controller.ReservationFormController">
+   <children>
+      <TableView fx:id="reservationTable" layoutX="36.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="436.0" prefWidth="1051.0" stylesheets="@../styleSheet/table.css">
+         <columns>
+            <TableColumn fx:id="reservationId" prefWidth="115.0" text="Reservation ID" />
+            <TableColumn fx:id="customerName" minWidth="0.0" prefWidth="184.0" text="Customer Name" />
+            <TableColumn fx:id="colMobile" minWidth="0.0" prefWidth="124.0" text="Mobile_No" />
+            <TableColumn fx:id="checkingDate" minWidth="0.0" prefWidth="189.0" text="Cheaking Date" />
+            <TableColumn fx:id="checkOut" minWidth="0.0" prefWidth="131.0" text="Checking Out" />
+            <TableColumn fx:id="paymentStates" minWidth="0.0" prefWidth="156.0" text="Payment States" />
+            <TableColumn fx:id="updateColumn" minWidth="0.0" prefWidth="78.0" text="Action" />
+            <TableColumn fx:id="delete" prefWidth="75.0" text="Action" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="893.0" layoutY="-1.0" onAction="#btnAddOnAction" prefHeight="44.0" prefWidth="213.0" stylesheets="@../styleSheet/txt.css" text="Create Reservation" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="27.0" layoutY="18.0" prefHeight="34.0" prefWidth="329.0" stylesheets="@../styleSheet/label.css" text="Mannage Reservation">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="40.0" prefHeight="31.0" prefWidth="329.0" styleClass="label-hint" stylesheets="@../styleSheet/label.css" text="Can manage everythin about reservation">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchBar" layoutX="638.0" onKeyPressed="#searchOnAction" prefHeight="44.0" prefWidth="235.0" promptText="Search" style="-fx-background-radius: 20;">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="893.0" layoutY="65.0" onAction="#btnPaymentOnAction" prefHeight="44.0" prefWidth="213.0" stylesheets="@../styleSheet/txt.css" text="Create Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

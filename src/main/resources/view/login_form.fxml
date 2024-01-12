@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel_management.controller.LoginFormController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="350.0" styleClass="gradiant-card" stylesheets="@../styleSheet/gredient%20colours.css" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="76.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservate">
+                    <font>
+                        <Font name="Arial Bold" size="46.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="65.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Management System">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <ImageView layoutX="124.0" layoutY="150.0">
+                    <image>
+                        <Image url="@../image/hotel.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="377.0" BorderPane.alignment="CENTER">
+            <children>
+                <JFXTextField fx:id="userNameField" focusColor="#0598ff" labelFloat="true" layoutX="109.0" layoutY="208.0" onAction="#txtUsernameOnAction" onMouseClicked="#txtUserNameOnMouseClicked" prefHeight="25.0" prefWidth="172.0" promptText="User Name" />
+                <JFXPasswordField fx:id="passwordField" focusColor="#0598ff" labelFloat="true" layoutX="109.0" layoutY="258.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="172.0" promptText="Password" />
+                <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="55.0" layoutY="260.0">
+                    <image>
+                        <Image url="@../image/password.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="loginBtn" layoutX="123.0" layoutY="333.0" onAction="#loginBtnOnAction" prefHeight="31.0" prefWidth="105.0" styleClass="gradiant-card" stylesheets="@../styleSheet/gredient%20colours.css" text="Login" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="69.0" fitWidth="69.0" layoutX="141.0" layoutY="56.0">
+                    <image>
+                        <Image url="@../image/users.png" />
+                    </image>
+                </ImageView>
+                <Text fill="#0598ff" layoutX="125.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <ImageView fx:id="closebtn" fitHeight="25.0" fitWidth="25.0" layoutX="314.0" layoutY="10.0" onMouseClicked="#closeBtnOnMouseClicked">
+                    <image>
+                        <Image url="@../image/close.png" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Label fx:id="lblWP" layoutX="111.0" layoutY="302.0" prefHeight="17.0" prefWidth="177.0" textFill="RED" />
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="56.0" layoutY="212.0">
+               <image>
+                  <Image url="@../image/username.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="612.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hotel_management.controller.MailFormController">
+   <children>
+      <Label layoutX="17.0" layoutY="18.0" prefHeight="34.0" prefWidth="329.0" stylesheets="@../styleSheet/label.css" text="Mannage Email">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="40.0" prefHeight="31.0" prefWidth="329.0" styleClass="label-hint" stylesheets="@../styleSheet/label.css" text="Can manage emails">
+         <font>
+            <Font name="Tahoma" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="62.0" layoutY="106.0" prefHeight="458.0" prefWidth="973.0" style="-fx-border-color: black;">
+         <children>
+            <TextArea layoutX="57.0" layoutY="136.0" prefHeight="223.0" prefWidth="840.0" />
+            <ComboBox fx:id="emailCombo" layoutX="57.0" layoutY="37.0" prefHeight="25.0" prefWidth="190.0" promptText="customer" />
+            <JFXButton layoutX="755.0" layoutY="399.0" onAction="#sendOnAction" prefHeight="25.0" prefWidth="139.0" stylesheets="@../../../../hotel/src/main/resources/styleSheet/txt.css" text="Send" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
